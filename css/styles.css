@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
+@import "reset.css";
 @import "variables.css";
 /* Components */
 @import "components/status-bar.css";
@@ -9,6 +10,9 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+@import "components/splash-screen.css";
+@import "components/letter-animation.css";
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
@@ -18,9 +22,11 @@
 @import "screens/chat.css";
 
 body {
-  color: #2e363e;
-  font-family: "Open Sans", sans-serif;
-  height: 150vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background);
+  color: var(--pink);
+  width: 100vw;
+  height: 100vh;
 }
 
 .main-screen {

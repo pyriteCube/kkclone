@@ -1,0 +1,39 @@
+.menu-main-nav-container ul li a {
+  display: flex;
+  font-size: 15.8vw;
+  font-weight: 600;
+  justify-content: center;
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 0.77;
+  overflow: hidden;
+  text-decoration: none;
+
+  background: -webkit-linear-gradient(transparent, transparent),
+    url("https://media.glamourmagazine.co.uk/photos/61c20544a526f4fca64d61b9/16:9/w_1600%2Cc_limit/DUALIPA211221_DEFAULT2GettyImages-1307104439.jpg")
+      left center;
+  background: -o-linear-gradient(transparent, transparent);
+  background-size: 0 0;
+  -webkit-background-clip: text;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.menu-main-nav-container ul li a:hover {
+  text-decoration: none;
+
+  background-size: auto 100%;
+  -webkit-text-fill-color: transparent;
+
+  animation: play 1.2s steps(10) infinite;
+}
+
+@keyframes play {
+  100% {
+    background-position: -1500px;
+  }
+}

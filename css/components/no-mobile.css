@@ -1,0 +1,44 @@
+#no-mobile {
+  z-index: 99;
+  height: 100vh;
+  color: #fd6ba4;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 600;
+  top: 0;
+  background-image: -webkit-linear-gradient(#fd6ba4, #f1e87c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 1.2s infinite linear;
+}
+
+@keyframes hue {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+}
+
+.screen_saver {
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1d1f20;
+}
+
+@media screen and (max-width: 600px) {
+  .screen_saver {
+    display: none;
+  }
+}
