@@ -2,8 +2,9 @@ const clock = document.getElementById("currentTime");
 
 function getClock() {
   const date = new Date();
-  clock.innerText = `${date.getHours()}:${date.getMinutes()}`;
-  console.log(clock.innerText);
+  const hours = String(date.getHours()).padStart(2,"0");
+  const minutes = String(date.getMinutes()).padStart(2,"0");
+  clock.innerText = `${hours}:${minutes}`;
 }
 
 getClock();
